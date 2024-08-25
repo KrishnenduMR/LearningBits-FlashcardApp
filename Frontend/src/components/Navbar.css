@@ -1,0 +1,111 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards;
+}
+
+.navbar {
+  @apply top-0 left-0 right-0 flex justify-between items-center p-4 z-50 font-mono text-white;
+}
+
+.nav {
+  @apply hidden md:flex justify-end items-center space-x-3;
+}
+
+.nav a {
+  @apply font-bold  p-2 hover:text-blue-400 px-3 py-1 hover:rounded-3xl;
+}
+
+.nav button {
+  @apply font-bold p-2 hover:text-blue-400 px-3 py-1 hover:rounded-3xl;
+}
+
+.nav-links {
+  @apply relative inline-block text-left rounded-3xl;
+}
+
+.logo {
+  @apply hidden text-2xl font-bold  hover:text-blue-400 sm:block;
+}
+
+.sm-logo {
+  @apply sm:hidden text-3xl font-bold hover:text-blue-200;
+}
+
+nav .login {
+  @apply text-white bg-black p-2 rounded-2xl hover:rounded-3xl font-extrabold;
+}
+
+.menu-btn {
+  @apply flex justify-end items-center w-12 h-12 rounded-s-3xl text-sm transition-transform duration-300 text-black bg-white hover:bg-blue-200 md:hidden;
+}
+
+.rotate-btn {
+  transform: rotate(90deg);
+}
+
+.small-menu {
+  @apply hidden absolute flex-col right-2 top-16 w-12 h-12 m-4 md:hidden transition-opacity duration-300 ease-in-out z-50;
+}
+
+.small-menu-items {
+  @apply flex justify-between mt-1 bg-white hover:border-b-4 border-b-black shadow-sm border-blue-300 rounded-md p-3 text-center items-center box-border md:hidden bg-opacity-20 hover:text-white;
+}
+
+.small-logos {
+  @apply h-12 w-12 hover:text-white;
+}
+
+.tooltip {
+  @apply hidden absolute right-14 w-20 h-8 bg-white text-gray-500 text-sm p-2 rounded-md shadow-lg fade-out;
+}
+
+.small-menu-div:hover .tooltip {
+  @apply block;
+}
+
+.small-menu-div {
+  @apply  relative text-center;
+}
+
+.dropdown {
+  @apply -mr-1 h-5 w-5 top-2;
+}
+
+.about-dropdown-md {
+  @apply hidden origin-top-right absolute right-2 mt-2 w-20 top-8 text-center;
+}
+
+.about-links-md {
+  @apply rounded-3xl block;
+}
+
+.small-menu-div:hover .about-sm {
+  @apply block;
+}
+
+.about-sm {
+  @apply text-center flex-col justify-between;
+}
+
+.about-links-sm {
+  @apply flex justify-between h-16 mt-1 bg-opacity-20 hover:text-white bg-white hover:border-b-4 border-b-black shadow-sm border-blue-300 rounded-md p-3 text-center items-center box-border md:hidden;
+}
+
+.tooltip-a {
+  @apply hidden absolute right-16 top-full w-20 h-8 bg-white text-gray-500 text-sm p-2 rounded-md shadow-lg fade-out;
+  z-index: 10;
+}
+
+.about-sm:hover .tooltip-a {
+  @apply block;
+}
+

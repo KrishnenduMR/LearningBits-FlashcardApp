@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(40, end) forwards;
+  }   
+
+.main-body {
+    @apply mt-0 p-2 bg-cover bg-center h-screen w-full relative font-mono;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../elements/bg-1.jpg');
+}
+
+.main-p {
+    @apply md:text-2xl text-xl text-center text-white font-bold mt-1 hover:text-blue-200;
+}
+
+
+  
