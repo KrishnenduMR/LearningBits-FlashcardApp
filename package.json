@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Flashcard App",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrishnenduMR/LearningBits-FlashcardApp.git"
+  },
+  "keywords": [
+    "Flashcard",
+    "Education",
+    "MERN",
+    "Dynamic",
+    "Application",
+    "User-Friendly"
+  ],
+  "author": "Krishnendu M R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrishnenduMR/LearningBits-FlashcardApp/issues"
+  },
+  "homepage": "https://github.com/KrishnenduMR/LearningBits-FlashcardApp#readme"
+}
